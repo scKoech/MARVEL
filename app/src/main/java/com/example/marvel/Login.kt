@@ -29,7 +29,7 @@ class Login : AppCompatActivity() {
             login()
         }
         RedirectReg.setOnClickListener {
-            val intent=Intent(this,MainPage::class.java)
+            val intent=Intent(this,MainActivity::class.java)
             startActivity(intent)
 
             finish()
