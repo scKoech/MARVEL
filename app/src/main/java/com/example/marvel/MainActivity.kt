@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var TxtFirstName: EditText
     lateinit var TxtSecondName: EditText
     lateinit var EdtPassword: EditText
-    lateinit var TxtUsername: EditText
     lateinit var PhoneNum: EditText
     lateinit var Txtemail: EditText
     lateinit var Txtlogin: TextView
@@ -29,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         TxtFirstName = findViewById(R.id.Edt_FisrtName)
         TxtSecondName = findViewById(R.id.Edt_SecondName)
         EdtPassword = findViewById(R.id.Edt_Pass)
-        TxtUsername = findViewById(R.id.Txt_username)
         PhoneNum = findViewById(R.id.Edt_PhoneNumber)
         Txtemail = findViewById(R.id.Edt_Email)
         Txtlogin = findViewById(R.id.Txt_Login)
@@ -51,10 +49,9 @@ class MainActivity : AppCompatActivity() {
         val secondname = TxtSecondName.text.toString()
         val email = Txtemail.text.toString()
         val phonenum = PhoneNum.text.toString()
-        val username = TxtUsername.text.toString()
         val password = EdtPassword.text.toString()
         val confpass = EdtPassword.text.toString()
-        if (firstname.isBlank() || secondname.isBlank() || email.isBlank() || phonenum.isBlank() || username.isBlank() || password.isBlank() || confpass.isBlank()) {
+        if (firstname.isBlank() || secondname.isBlank() || email.isBlank() || phonenum.isBlank() || password.isBlank() || confpass.isBlank()) {
             Toast.makeText(this, "Fill missing fields", Toast.LENGTH_LONG).show()
             return
         } else if (password != confpass) {

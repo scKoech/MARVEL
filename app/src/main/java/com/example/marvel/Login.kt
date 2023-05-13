@@ -37,7 +37,6 @@ class Login : AppCompatActivity() {
     }
     private fun login(){
         val email=TxtUserdetails.text.toString()
-        val username=TxtUserdetails.text.toString()
         val pass=EdtPass.text.toString()
 
         auth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(this){

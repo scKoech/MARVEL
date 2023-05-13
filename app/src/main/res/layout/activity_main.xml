@@ -13,9 +13,10 @@
         android:layout_width="247dp"
         android:layout_height="53dp"
         android:ems="10"
+        android:hint="Enter First Name"
         android:inputType="textPersonName"
-        android:text="Enter First Name"
         android:textColor="#FEFEFE"
+        android:textColorHint="#F1EDED"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,19 +35,20 @@
         android:textColorHint="#ECE4E4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.403"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.798" />
+        app:layout_constraintVertical_bias="0.67" />
 
     <EditText
         android:id="@+id/Edt_SecondName"
         android:layout_width="246dp"
         android:layout_height="51dp"
         android:ems="10"
+        android:hint="Enter Second Name"
         android:inputType="textPersonName"
-        android:text="Enter Second Name"
         android:textColor="#F8F2F2"
+        android:textColorHint="#F3EFEF"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,22 +69,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.96" />
-
-    <EditText
-        android:id="@+id/Txt_username"
-        android:layout_width="254dp"
-        android:layout_height="54dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Enter username"
-        android:textColor="#F3ECEC"
-        android:textColorHint="#F1EDED"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658" />
 
     <EditText
         android:id="@+id/Edt_PhoneNumber"
@@ -151,9 +137,9 @@
         android:textColorHint="#F3EBEB"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.797" />
+        app:layout_constraintVertical_bias="0.786" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

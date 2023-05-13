@@ -20,8 +20,14 @@ class MainPage : AppCompatActivity() {
         Edt_EnterName=findViewById(R.id.Edt_Superhero)
         Btn_Enter=findViewById(R.id.Btn_Enter)
 
+        val characters = MarvelApiClient.getCharacters()
+        characters.forEach { character ->
+            println("${character.name}: ${character.description}")
+        }
+
+
         Btn_Enter.setOnClickListener {
-            val intent=Intent(this,Info::class.java)
+            val intent=Intent(this,characters::class.java)
             startActivity(intent)
         }
     }
