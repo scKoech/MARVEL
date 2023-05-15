@@ -27,6 +27,9 @@ class Login : AppCompatActivity() {
 
         BtnLogin.setOnClickListener {
             login()
+            val intent = Intent(this, MainPage::class.java)
+            startActivity(intent)
+
         }
         RedirectReg.setOnClickListener {
             val intent=Intent(this,MainActivity::class.java)

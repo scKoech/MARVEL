@@ -37,6 +37,9 @@ class MainActivity : AppCompatActivity() {
 
         BtnSignUp.setOnClickListener {
             SignUpUser()
+            val intent = Intent(this, MainPage::class.java)
+            startActivity(intent)
+
         }
         Txtlogin.setOnClickListener {
             val intent = Intent(this, Login::class.java)
