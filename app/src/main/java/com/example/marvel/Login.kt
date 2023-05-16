@@ -27,8 +27,6 @@ class Login : AppCompatActivity() {
 
         BtnLogin.setOnClickListener {
             login()
-            val intent = Intent(this, MainPage::class.java)
-            startActivity(intent)
 
         }
         RedirectReg.setOnClickListener {
@@ -45,6 +43,8 @@ class Login : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(this){
             if (it.isSuccessful){
                 Toast.makeText(this,"Logged in successfully",Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, MainPage::class.java)
+                startActivity(intent)
             }else
                 Toast.makeText(this,"Log in failed",Toast.LENGTH_SHORT).show()
         }

@@ -37,8 +37,6 @@ class MainActivity : AppCompatActivity() {
 
         BtnSignUp.setOnClickListener {
             SignUpUser()
-            val intent = Intent(this, MainPage::class.java)
-            startActivity(intent)
 
         }
         Txtlogin.setOnClickListener {
@@ -65,6 +63,8 @@ class MainActivity : AppCompatActivity() {
             if (it.isSuccessful) {
                 Toast.makeText(this, "Signed up successfully", Toast.LENGTH_LONG).show()
                 finish()
+                val intent = Intent(this, MainPage::class.java)
+                startActivity(intent)
             } else {
                 Toast.makeText(this, "Failed to create", Toast.LENGTH_LONG).show()
             }

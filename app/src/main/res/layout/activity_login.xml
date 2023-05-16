@@ -27,7 +27,7 @@
         android:layout_height="58dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Enter email,username or password"
+        android:hint="Enter email"
         android:textColor="#EFEEEA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
